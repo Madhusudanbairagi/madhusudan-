@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculeter
+            
+        </title>
+    </head>
+    <body>
+
+        <div style="width:258px;height:40px;border-style:solid;float:left;background:rgb(39, 42, 43);">
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+          <button onclick="clr()">C</button>
+       </div>
+    <div style="width:258px;height:40px;border-style:solid;float:left;background:rgb(39, 42, 43);"></div>
+           <button onclick="four()">4</button>
+           <button onclick="five()">5</button>
+          <button onclick="six()">6</button>
+          <button onclick="divide()">/</button>
+    </div>
+     <div style="width:258px;height:40px;border-style:solid;float:left;background:rgb(39, 42, 43);"> 
+       <button onclick="one()">1</button>
+       <button onclick="two()">2</button>
+       <button onclick="three()">3</button>
+       <button onclick="add()">+</button>
+    <div style="width:258px;height:40px;border-style:solid;float:left;background:rgb(39, 42, 43);">
+        <button onclick="subtract()">-</button>
+  
+      <button onclick="zero()">0</button>
+     <button onclick="multiply()">*</button>
+     <button onclick="equals()">=</button>
+   </div>
+
+     
+
+    <script>
+         function one(){
+        document.getElementById('display').innerHTML+=1;
+    }
+    function two(){
+        document.getElementById('display').innerHTML+=2;
+         }     
+    function three(){
+        document.getElementById('display').innerHTML+=3;
+       }
+    function clr(){
+        document.getElementById('display').innerHTML='';
+         }     
+         
+    function four(){
+        document.getElementById('display').innerHTML+=4;
+    }
+    function five(){
+        document.getElementById('display').innerHTML+=5;
+         }     
+    function six(){
+        document.getElementById('display').innerHTML+=6;
+    }
+    function equals(){
+        document.getElementById('display').innerHTML=eval(document.getElementById('display').innerHTML);
+         }       
+    function seven(){
+        document.getElementById('display').innerHTML+=7;
+    }
+    function eight(){
+        document.getElementById('display').innerHTML+=8;
+         }     
+    function nine(){
+        document.getElementById('display').innerHTML+=9; 
+    }
+    function add(){
+        document.getElementById('display').innerHTML+="+"; 
+    }
+    function subtract(){
+        document.getElementById('display').innerHTML+="-";
+    }
+    function zero(){
+        document.getElementById('display').innerHTML+=0;
+         }     
+    function multiply(){
+        document.getElementById('display').innerHTML+="*"; 
+    }  
+    function divide(){
+        document.getElementById('display').innerHTML+="/"; 
+    }   
+    </script>
+    </body>
+
+</html>
